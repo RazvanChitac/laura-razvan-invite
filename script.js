@@ -118,8 +118,7 @@
     try {
       const res = await fetch(endpoint, {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
-        body: params.toString(),
+        body: new FormData(form),
       });
 
       let ok = res.ok;
