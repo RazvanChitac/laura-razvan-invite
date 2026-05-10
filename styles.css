@@ -95,7 +95,7 @@ a { color: inherit; text-decoration: none; }
 .container { padding: 0 56px; }
 .container.narrow { max-width: 640px; margin: 0 auto; }
 .center { text-align: center; }
-.section { padding: 64px 0; }
+.section { padding: 40px 0; }
 .section--alt { background: var(--paper-soft); }
 
 /* ── Type scale ── */
@@ -187,7 +187,7 @@ a { color: inherit; text-decoration: none; }
    ═══════════════════════════════════════════ */
 .hero {
   text-align: center;
-  padding: 72px 56px 80px;
+  padding: 48px 56px 56px;
   position: relative;
   z-index: 1;
 }
@@ -294,13 +294,13 @@ a { color: inherit; text-decoration: none; }
 /* ═══════════════════════════════════════════
    INVITATION
    ═══════════════════════════════════════════ */
-.section--invite { padding: 12px 0 60px; }
+.section--invite { padding: 12px 0 40px; }
 
 
 /* ═══════════════════════════════════════════
    COUNTDOWN
    ═══════════════════════════════════════════ */
-.section--countdown { padding: 48px 0 60px; }
+.section--countdown { padding: 32px 0 40px; }
 
 .countdown-box {
   background: var(--paper-soft);
@@ -363,7 +363,7 @@ a { color: inherit; text-decoration: none; }
 /* ═══════════════════════════════════════════
    FAMILY
    ═══════════════════════════════════════════ */
-.section--family { padding: 60px 0; }
+.section--family { padding: 40px 0; }
 
 .family__title {
   font-family: var(--font-script);
@@ -424,7 +424,7 @@ a { color: inherit; text-decoration: none; }
 /* ═══════════════════════════════════════════
    LOCATION SECTIONS
    ═══════════════════════════════════════════ */
-.section--location { padding: 60px 0; }
+.section--location { padding: 40px 0; }
 
 .location-row {
   display: grid;
@@ -471,7 +471,7 @@ a { color: inherit; text-decoration: none; }
 /* ═══════════════════════════════════════════
    RSVP FORM
    ═══════════════════════════════════════════ */
-.section--rsvp { padding: 60px 0 80px; }
+.section--rsvp { padding: 40px 0 56px; }
 .section--rsvp .script-label { text-align: center; margin-bottom: 8px; }
 
 .rsvp__subtitle {
@@ -602,7 +602,7 @@ a { color: inherit; text-decoration: none; }
    FOOTER
    ═══════════════════════════════════════════ */
 .footer {
-  padding: 60px 40px 56px;
+  padding: 40px 40px 40px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -651,9 +651,9 @@ a { color: inherit; text-decoration: none; }
 
   .corner  { width: 180px; }
 
-  .section      { padding: 48px 0; }
+  .section      { padding: 32px 0; }
   .container    { padding: 0 24px; }
-  .hero         { padding: 60px 24px 64px; }
+  .hero         { padding: 40px 24px 48px; }
 
   .hero__names  { font-size: clamp(2.8rem, 12vw, 4rem); }
 
@@ -682,7 +682,7 @@ a { color: inherit; text-decoration: none; }
   .field-row { grid-template-columns: 1fr; gap: 12px; }
   .attendance-group { gap: 8px; }
 
-  .footer { padding: 48px 24px 44px; }
+  .footer { padding: 32px 24px 32px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
