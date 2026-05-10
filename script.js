@@ -28,7 +28,7 @@
         box.dataset.done = "1";
         const msg = document.createElement("p");
         msg.textContent = 'Astăzi ne spunem «DA»!';
-        msg.style.cssText = "font-family:var(--font-script);font-size:1.6rem;color:var(--rust);margin-top:16px;width:100%;";
+        msg.className = "font-display-script text-3xl text-text-accent mt-4 w-full";
         box.appendChild(msg);
       }
       return;
@@ -135,5 +135,61 @@
       submitBtn.disabled = false;
       submitBtn.lastChild.textContent = " " + origText;
     }
+  });
+
+  /* ── Scroll Animations & Nav Spy ── */
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.15
+  };
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('opacity-0', 'translate-y-8');
+        entry.target.classList.add('opacity-100', 'translate-y-0');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+    revealObserver.observe(el);
+  });
+
+  const spyOptions = {
+    root: null,
+    rootMargin: '-50% 0px -50% 0px',
+    threshold: 0
+  };
+
+  const navLinks = {
+    poveste: document.getElementById('nav-poveste'),
+    locatie: document.getElementById('nav-locatie'),
+    rsvp: document.getElementById('nav-rsvp')
+  };
+
+  const spyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        if (navLinks[id]) {
+          Object.values(navLinks).forEach(link => {
+            if (link) {
+              link.classList.remove('text-text-accent');
+              link.classList.add('text-secondary');
+            }
+          });
+          navLinks[id].classList.remove('text-secondary');
+          navLinks[id].classList.add('text-text-accent');
+        }
+      }
+    });
+  }, spyOptions);
+
+  ['poveste', 'locatie', 'rsvp'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) spyObserver.observe(el);
   });
 })();
