@@ -113,7 +113,6 @@
     const origText = submitBtn.textContent.trim();
     submitBtn.lastChild.textContent = " Se trimite…";
 
-    const params = new URLSearchParams(new FormData(form));
 
     try {
       const res = await fetch(endpoint, {
