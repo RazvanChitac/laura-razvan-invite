@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 
-<html lang="ro"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Invitație Nuntă - Laura &amp; Răzvan</title>
-<meta property="og:title" content="Laura &amp; Răzvan - Ne Căsătorim!" />
-<meta property="og:description" content="Vă invităm să ne fiți alături în ziua noastră specială. Confirmați prezența aici." />
-<meta property="og:image" content="https://razvanchitac.github.io/laura-razvan-invite/assets/New%20Version/background.jpg" />
-<meta property="og:url" content="https://razvanchitac.github.io/laura-razvan-invite/" />
-<meta property="og:type" content="website" />
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Lora:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Invitație Nuntă - Laura &amp; Răzvan</title>
+    <meta property="og:title" content="Laura &amp; Răzvan - Ne Căsătorim!" />
+    <meta property="og:description"
+        content="Vă invităm să ne fiți alături în ziua noastră specială. Confirmați prezența aici." />
+    <meta property="og:image"
+        content="https://razvanchitac.github.io/laura-razvan-invite/assets/New%20Version/background.jpg" />
+    <meta property="og:url" content="https://razvanchitac.github.io/laura-razvan-invite/" />
+    <meta property="og:type" content="website" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Lora:ital,wght@0,400..700;1,400..700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -175,262 +185,349 @@
             }
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .texture-bg {
             background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E');
         }
+
         .floral-corner-tl {
-            background-image: linear-gradient(135deg, rgba(198,118,88,0.1) 0%, transparent 40%);
+            background-image: linear-gradient(135deg, rgba(198, 118, 88, 0.1) 0%, transparent 40%);
         }
+
         .floral-corner-br {
-            background-image: linear-gradient(315deg, rgba(198,118,88,0.1) 0%, transparent 40%);
+            background-image: linear-gradient(315deg, rgba(198, 118, 88, 0.1) 0%, transparent 40%);
         }
-        .conditional { display: none; }
-        .conditional.is-visible { display: block; }
-        .form-status { color: inherit; }
-        .form-status.is-success { color: #006860; }
-        .form-status.is-error { color: #ba1a1a; }
-        input[aria-invalid="true"] { border-color: #ba1a1a !important; }
+
+        .conditional {
+            display: none;
+        }
+
+        .conditional.is-visible {
+            display: block;
+        }
+
+        .form-status {
+            color: inherit;
+        }
+
+        .form-status.is-success {
+            color: #006860;
+        }
+
+        .form-status.is-error {
+            color: #ba1a1a;
+        }
+
+        input[aria-invalid="true"] {
+            border-color: #ba1a1a !important;
+        }
     </style>
 </head>
+
 <body class="bg-background-base text-text-primary texture-bg relative min-h-screen overflow-x-hidden antialiased">
-<!-- TopAppBar -->
-<header class="fixed top-0 left-0 w-full z-40 bg-background/80 backdrop-blur-md transition-all duration-300">
-<div class="flex justify-between items-center w-full px-inner-padding max-w-container-max mx-auto py-4">
-<span class="material-symbols-outlined text-primary" data-icon="favorite">favorite</span>
-<h1 class="font-display-script text-display-script-mobile md:text-display-script text-primary"><br/></h1>
-<span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
-</div>
-</header>
-<!-- Main Content Canvas -->
-<main class="pt-[100px] pb-section-gap relative">
-<!-- Background Ornaments -->
-<div class="absolute top-0 left-0 w-full h-96 floral-corner-tl -z-10" data-alt="Soft, impressionistic watercolor painting of autumn leaves and delicate branches, acting as a subtle corner overlay in the top left. The color palette features muted terracotta, warm ochre, and soft beige. The style is romantic and elegant, blending seamlessly into the light cream parchment background. High-key lighting, airy and welcoming mood."></div>
-<!-- Hero Section -->
-<section class="flex flex-col items-center justify-center text-center px-inner-padding max-w-container-max mx-auto pt-4">
-<div class="mb-8 relative">
-<div class="absolute inset-0 bg-primary/10 rounded-t-full scale-105 -z-10 blur-sm"></div>
-<img alt="Laura and Răzvan" class="w-64 h-80 object-cover rounded-t-full shadow-lg border-4 border-background-surface" src="https://lh3.googleusercontent.com/aida/ADBb0uh1JZOzw0fVhCKOLGESYX1uyjRAvX-yhtsnpgicVjfrSDLQrvDei9QrpjD6rDOGbpvbbcZNLaS-f2MQfcmk16T73j3YHuGiI_WYtN5zm65xmWM31Ohy0dzwm1rgRV1b8t7_O6PC6lGopVAT2vd3ywsZvaii_EAGWLjSJtLybTWhoPGjBaXifRx1ooLbuqlvUgr-CH_804Nhs_nDkAooWsZ0k1rja-6mM4FfQJZfTdpV5iVeq-trvRhXvc0hv0whanjAZV61P8bZxok"/>
-</div>
-<div class="mb-4">
-<span class="material-symbols-outlined text-text-accent" data-icon="favorite" data-weight="fill" style='font-variation-settings: "FILL" 1;'>favorite</span>
-</div>
-<p class="font-body-md text-body-md text-secondary mb-4 max-w-md mx-auto italic">
-                Cu inimile pline de emoție,<br/>
+    <!-- TopAppBar -->
+    <header class="fixed top-0 left-0 w-full z-40 bg-background/80 backdrop-blur-md transition-all duration-300">
+        <div class="flex justify-between items-center w-full px-inner-padding max-w-container-max mx-auto py-4">
+            <span class="material-symbols-outlined text-primary" data-icon="favorite">favorite</span>
+            <h1 class="font-display-script text-display-script-mobile md:text-display-script text-primary"><br /></h1>
+            <span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+        </div>
+    </header>
+    <!-- Main Content Canvas -->
+    <main class="pt-[100px] pb-section-gap relative">
+        <!-- Background Ornaments -->
+        <div class="absolute top-0 left-0 w-full h-96 floral-corner-tl -z-10"
+            data-alt="Soft, impressionistic watercolor painting of autumn leaves and delicate branches, acting as a subtle corner overlay in the top left. The color palette features muted terracotta, warm ochre, and soft beige. The style is romantic and elegant, blending seamlessly into the light cream parchment background. High-key lighting, airy and welcoming mood.">
+        </div>
+        <!-- Hero Section -->
+        <section
+            class="flex flex-col items-center justify-center text-center px-inner-padding max-w-container-max mx-auto pt-4">
+            <div class="mb-8 relative">
+                <div class="absolute inset-0 bg-primary/10 rounded-t-full scale-105 -z-10 blur-sm"></div>
+                <img alt="Laura and Răzvan"
+                    class="w-64 h-80 object-cover rounded-t-full shadow-lg border-4 border-background-surface"
+                    src="https://lh3.googleusercontent.com/aida/ADBb0uh1JZOzw0fVhCKOLGESYX1uyjRAvX-yhtsnpgicVjfrSDLQrvDei9QrpjD6rDOGbpvbbcZNLaS-f2MQfcmk16T73j3YHuGiI_WYtN5zm65xmWM31Ohy0dzwm1rgRV1b8t7_O6PC6lGopVAT2vd3ywsZvaii_EAGWLjSJtLybTWhoPGjBaXifRx1ooLbuqlvUgr-CH_804Nhs_nDkAooWsZ0k1rja-6mM4FfQJZfTdpV5iVeq-trvRhXvc0hv0whanjAZV61P8bZxok" />
+            </div>
+            <div class="mb-4">
+                <span class="material-symbols-outlined text-text-accent" data-icon="favorite" data-weight="fill"
+                    style='font-variation-settings: "FILL" 1;'>favorite</span>
+            </div>
+            <p class="font-body-md text-body-md text-secondary mb-4 max-w-md mx-auto italic">
+                Cu inimile pline de emoție,<br />
                 vă invităm alături de noi
             </p>
-<h2 class="font-display-script text-[72px] leading-[1.1] text-text-accent mb-4 drop-shadow-sm">
+            <h2 class="font-display-script text-[72px] leading-[1.1] text-text-accent mb-4 drop-shadow-sm">
                 Laura &amp; Răzvan
             </h2>
-<!-- Decorative Divider -->
-<div class="flex items-center justify-center gap-4 w-full max-w-[200px] mb-section-gap">
-<div class="h-px bg-text-accent w-full opacity-50"></div>
-<span class="material-symbols-outlined text-text-accent text-sm" data-icon="favorite" data-weight="fill" style='font-variation-settings: "FILL" 1;'>favorite</span>
-<div class="h-px bg-text-accent w-full opacity-50"></div>
-</div>
-</section>
-<!-- Story Section -->
-<section id="poveste" class="px-inner-padding max-w-container-max mx-auto text-center mb-section-gap">
-<h3 class="font-label-caps text-label-caps text-secondary mb-8 uppercase tracking-widest">O zi care ne adună pe toți</h3>
-<div class="max-w-2xl mx-auto space-y-6 font-body-lg text-body-lg text-on-surface-variant">
-<p class="">
-                    După aproape 9 ani în care am crescut împreună, am râs, am învățat și ne-am construit lumea noastră, simțim că a venit momentul să mai scriem un capitol. Unul pe care ni-l dorim aproape de voi.
+            <!-- Decorative Divider -->
+            <div class="flex items-center justify-center gap-4 w-full max-w-[200px] mb-section-gap">
+                <div class="h-px bg-text-accent w-full opacity-50"></div>
+                <span class="material-symbols-outlined text-text-accent text-sm" data-icon="favorite" data-weight="fill"
+                    style='font-variation-settings: "FILL" 1;'>favorite</span>
+                <div class="h-px bg-text-accent w-full opacity-50"></div>
+            </div>
+        </section>
+        <!-- Story Section -->
+        <section id="poveste" class="px-inner-padding max-w-container-max mx-auto text-center mb-section-gap">
+            <h3 class="font-label-caps text-label-caps text-secondary mb-8 uppercase tracking-widest">O zi care ne adună
+                pe toți</h3>
+            <div class="max-w-2xl mx-auto space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+                <p class="">
+                    După aproape 9 ani în care am crescut împreună, am râs, am învățat și ne-am construit lumea noastră,
+                    simțim că a venit momentul să mai scriem un capitol. Unul pe care ni-l dorim aproape de voi.
                 </p>
-<p class="">
-                    Cu binecuvântarea părinților și alături de nașii noștri, vă invităm să ne fiți alături în ziua în care ne vom spune «DA» — simplu, sincer și din toată inima.
+                <p class="">
+                    Cu binecuvântarea părinților și alături de nașii noștri, vă invităm să ne fiți alături în ziua în
+                    care ne vom spune «DA» — simplu, sincer și din toată inima.
                 </p>
-</div>
-</section>
-<!-- Countdown Section -->
-<section class="px-inner-padding max-w-container-max mx-auto mb-section-gap">
-<div class="bg-background-surface rounded-xl p-8 max-w-3xl mx-auto relative overflow-hidden">
-<!-- Subtle internal texture -->
-<div class="absolute inset-0 bg-white/40 mix-blend-overlay pointer-events-none"></div>
-<h3 class="font-display-script text-[40px] text-center text-text-accent mb-8 relative z-10">Numărăm zilele până la «DA»</h3>
-<div class="flex flex-row justify-center items-center gap-8 md:gap-16 relative z-10" id="countdown">
-<div class="flex flex-col items-center">
-<span class="font-countdown-value text-countdown-value text-text-accent" data-unit="days">--</span>
-<span class="font-label-caps text-label-caps text-secondary uppercase mt-2">Zile</span>
-</div>
-<!-- Vertical Separator -->
-<div class="h-16 w-px bg-text-accent/30 relative flex items-center justify-center">
-<div class="w-1.5 h-1.5 rounded-full bg-text-accent absolute"></div>
-</div>
-<div class="flex flex-col items-center">
-<span class="font-countdown-value text-countdown-value text-text-accent" data-unit="hours">--</span>
-<span class="font-label-caps text-label-caps text-secondary uppercase mt-2">Ore</span>
-</div>
-<!-- Vertical Separator -->
-<div class="h-16 w-px bg-text-accent/30 relative flex items-center justify-center">
-<div class="w-1.5 h-1.5 rounded-full bg-text-accent absolute"></div>
-</div>
-<div class="flex flex-col items-center flex">
-<span class="font-countdown-value text-countdown-value text-text-accent" data-unit="minutes">--</span>
-<span class="font-label-caps text-label-caps text-secondary uppercase mt-2">Minute</span>
-</div>
-</div>
-</div>
-</section>
-<!-- People Section -->
-<section class="px-inner-padding max-w-container-max mx-auto text-center mb-section-gap">
-<h3 class="font-display-script text-[40px] text-text-accent mb-12 flex items-center justify-center gap-2">
-                Pentru că nimic nu se construiește singur 
+            </div>
+        </section>
+        <!-- Countdown Section -->
+        <section class="px-inner-padding max-w-container-max mx-auto mb-section-gap">
+            <div class="bg-background-surface rounded-xl p-8 max-w-3xl mx-auto relative overflow-hidden">
+                <!-- Subtle internal texture -->
+                <div class="absolute inset-0 bg-white/40 mix-blend-overlay pointer-events-none"></div>
+                <h3 class="font-display-script text-[40px] text-center text-text-accent mb-8 relative z-10">Numărăm
+                    zilele până la «DA»</h3>
+                <div class="flex flex-row justify-center items-center gap-8 md:gap-16 relative z-10" id="countdown">
+                    <div class="flex flex-col items-center">
+                        <span class="font-countdown-value text-countdown-value text-text-accent"
+                            data-unit="days">--</span>
+                        <span class="font-label-caps text-label-caps text-secondary uppercase mt-2">Zile</span>
+                    </div>
+                    <!-- Vertical Separator -->
+                    <div class="h-16 w-px bg-text-accent/30 relative flex items-center justify-center">
+                        <div class="w-1.5 h-1.5 rounded-full bg-text-accent absolute"></div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="font-countdown-value text-countdown-value text-text-accent"
+                            data-unit="hours">--</span>
+                        <span class="font-label-caps text-label-caps text-secondary uppercase mt-2">Ore</span>
+                    </div>
+                    <!-- Vertical Separator -->
+                    <div class="h-16 w-px bg-text-accent/30 relative flex items-center justify-center">
+                        <div class="w-1.5 h-1.5 rounded-full bg-text-accent absolute"></div>
+                    </div>
+                    <div class="flex flex-col items-center flex">
+                        <span class="font-countdown-value text-countdown-value text-text-accent"
+                            data-unit="minutes">--</span>
+                        <span class="font-label-caps text-label-caps text-secondary uppercase mt-2">Minute</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- People Section -->
+        <section class="px-inner-padding max-w-container-max mx-auto text-center mb-section-gap">
+            <h3 class="font-display-script text-[40px] text-text-accent mb-12 flex items-center justify-center gap-2">
+                Pentru că nimic nu se construiește singur
                 <span class="material-symbols-outlined text-text-accent text-2xl" data-icon="favorite">favorite</span>
-</h3>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl mx-auto">
-<!-- Parents Groom -->
-<div class="flex flex-col items-center">
-<div class="w-16 h-16 rounded-full border-2 border-divider flex items-center justify-center mb-4 bg-surface-container-high text-text-accent">
-<span class="material-symbols-outlined text-3xl" data-icon="groups">groups</span>
-</div>
-<span class="font-body-md text-body-md text-secondary mb-1">Părinții mirelui</span>
-<span class="font-body-lg text-body-lg text-text-primary">Ilie &amp; Cătălina</span>
-</div>
-<!-- Parents Bride -->
-<div class="flex flex-col items-center">
-<div class="w-16 h-16 rounded-full border-2 border-divider flex items-center justify-center mb-4 bg-surface-container-high text-text-accent">
-<span class="material-symbols-outlined text-3xl" data-icon="spa">spa</span>
-</div>
-<span class="font-body-md text-body-md text-secondary mb-1">Părinții miresei</span>
-<span class="font-body-lg text-body-lg text-text-primary">Elena</span>
-</div>
-<!-- Godparents -->
-<div class="flex flex-col items-center">
-<div class="w-16 h-16 rounded-full border-2 border-divider flex items-center justify-center mb-4 bg-surface-container-high text-text-accent">
-<span class="material-symbols-outlined text-3xl" data-icon="volunteer_activism">volunteer_activism</span>
-</div>
-<span class="font-body-md text-body-md text-secondary mb-1">Nași</span>
-<span class="font-body-lg text-body-lg text-text-primary">Tiberiu &amp; Nicoleta</span>
-</div>
-</div>
-<div class="w-full max-w-3xl mx-auto h-px bg-divider mt-12"></div>
-</section>
-<!-- Events Section -->
-<section id="locatie" class="px-inner-padding max-w-container-max mx-auto mb-section-gap space-y-8">
-<!-- Church -->
-<div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-<div class="w-full md:w-1/2 flex justify-center">
-<div class="w-64 h-64 rounded-full overflow-hidden border-4 border-background-surface shadow-sm relative" style="mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%);">
-<img alt="Biserica" class="w-full h-full object-cover" data-alt="A serene, soft watercolor illustration of a classical Orthodox church surrounded by autumn foliage. The colors are warm terracotta, muted greens, and soft golds. The artwork has a distinct hand-painted, editorial feel, blending seamlessly into a light parchment background without harsh edges, creating an intimate, romantic atmosphere." src="https://lh3.googleusercontent.com/aida/ADBb0ugAazJyZmJvUqEW0pPsEtcfiuvuhKQXunnHBGpmiI8EpWAYtNi-zvbIDCyQa8rVvqC3XQzGAgO4NFhEx-7wi2zdFGP1ev3WBpKAgPwZhxU-fCLBL1KVHg_6c8ckbuaxg7gUjg4zaMZA2HpucoS7KR-PhkoJPPbi8I-nn98BIgrheZhwlpv8ijyfA2cGux7D5sS-FjGD-zP4-VvxbCAtjw50s6SCkmrFIpOs1Izznd0c6gGDDjXTcdHxlVPe3raxyLg1gnqYWfgzJd0"/>
-</div>
-</div>
-<div class="w-full md:w-1/2 text-center md:text-left">
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">
-                        Ne vedem la Biserica Toma Cozma din Iași, acolo unde, în liniștea și emoția momentului, ne vom promite unul altuia o viață împreună — în fața lui Dumnezeu.
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl mx-auto">
+                <!-- Parents Groom -->
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-16 h-16 rounded-full border-2 border-divider flex items-center justify-center mb-4 bg-surface-container-high text-text-accent">
+                        <span class="material-symbols-outlined text-3xl" data-icon="groups">groups</span>
+                    </div>
+                    <span class="font-body-md text-body-md text-secondary mb-1">Părinții mirelui</span>
+                    <span class="font-body-lg text-body-lg text-text-primary">Ilie &amp; Cătălina</span>
+                </div>
+                <!-- Parents Bride -->
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-16 h-16 rounded-full border-2 border-divider flex items-center justify-center mb-4 bg-surface-container-high text-text-accent">
+                        <span class="material-symbols-outlined text-3xl" data-icon="spa">spa</span>
+                    </div>
+                    <span class="font-body-md text-body-md text-secondary mb-1">Părinții miresei</span>
+                    <span class="font-body-lg text-body-lg text-text-primary">Elena</span>
+                </div>
+                <!-- Godparents -->
+                <div class="flex flex-col items-center">
+                    <div
+                        class="w-16 h-16 rounded-full border-2 border-divider flex items-center justify-center mb-4 bg-surface-container-high text-text-accent">
+                        <span class="material-symbols-outlined text-3xl"
+                            data-icon="volunteer_activism">volunteer_activism</span>
+                    </div>
+                    <span class="font-body-md text-body-md text-secondary mb-1">Nașii</span>
+                    <span class="font-body-lg text-body-lg text-text-primary">Tiberiu &amp; Nicoleta</span>
+                </div>
+            </div>
+            <div class="w-full max-w-3xl mx-auto h-px bg-divider mt-12"></div>
+        </section>
+        <!-- Events Section -->
+        <section id="locatie" class="px-inner-padding max-w-container-max mx-auto mb-section-gap space-y-8">
+            <!-- Church -->
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-background-surface shadow-sm relative"
+                        style="mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%);">
+                        <img alt="Biserica" class="w-full h-full object-cover"
+                            data-alt="A serene, soft watercolor illustration of a classical Orthodox church surrounded by autumn foliage. The colors are warm terracotta, muted greens, and soft golds. The artwork has a distinct hand-painted, editorial feel, blending seamlessly into a light parchment background without harsh edges, creating an intimate, romantic atmosphere."
+                            src="https://lh3.googleusercontent.com/aida/ADBb0ugAazJyZmJvUqEW0pPsEtcfiuvuhKQXunnHBGpmiI8EpWAYtNi-zvbIDCyQa8rVvqC3XQzGAgO4NFhEx-7wi2zdFGP1ev3WBpKAgPwZhxU-fCLBL1KVHg_6c8ckbuaxg7gUjg4zaMZA2HpucoS7KR-PhkoJPPbi8I-nn98BIgrheZhwlpv8ijyfA2cGux7D5sS-FjGD-zP4-VvxbCAtjw50s6SCkmrFIpOs1Izznd0c6gGDDjXTcdHxlVPe3raxyLg1gnqYWfgzJd0" />
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Ne vedem la Biserica Toma Cozma din Iași, acolo unde, în liniștea și emoția momentului, ne vom
+                        promite unul altuia o viață împreună — în fața lui Dumnezeu.
                     </p>
-<a href="https://maps.app.goo.gl/yuhxLdmPDXgRkNGL8?g_st=ic" target="_blank" rel="noopener" class="bg-text-accent hover:bg-button-hover text-on-primary font-label-caps text-label-caps py-3 px-6 rounded-full transition-colors duration-300 flex items-center justify-center gap-2 mx-auto md:mx-0">
-<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                    <a href="https://maps.app.goo.gl/yuhxLdmPDXgRkNGL8?g_st=ic" target="_blank" rel="noopener"
+                        class="bg-text-accent hover:bg-button-hover text-on-primary font-label-caps text-label-caps py-3 px-6 rounded-full transition-colors duration-300 flex items-center justify-center gap-2 mx-auto md:mx-0">
+                        <span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
                         VEZI LOCAȚIA
                     </a>
-</div>
-</div>
-<!-- Party -->
-<div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
-<div class="w-full md:w-1/2 flex justify-center">
-<div class="w-64 h-64 rounded-full overflow-hidden border-4 border-background-surface shadow-sm relative" style="mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%);">
-<img alt="Petrecere" class="w-full h-full object-cover" data-alt="A warm, inviting watercolor illustration of an elegant event hall entrance decorated with autumn floral arrangements and soft glowing fairy lights. The mood is festive yet intimate and romantic. The color palette features terracotta, warm cream, and deep earthy browns. The edges of the image fade softly like a traditional watercolor painting on textured paper." src="https://lh3.googleusercontent.com/aida/ADBb0uhwwmFUM3I4nCvKDm5Njea8mMR4kDxQke5m5VG_VGD7eF9YXuEoB2D2pELJHj6gaHgw4puNC2PrAfhuWOHBVKp-IxM4fCEyCTf_iaDoW2CNGyDtBGM0F11J6yma1MjxabCb0gdJ4T7qTiOdezhvyuL4StJXw4E1lGqvQDG0XLf7FcHSxwqklwI08JG2CuwxNnoZ0QTduEmTPLR1gDHR_SBLRtYPKpTs7mv7eLr_q5jc5V3Zo_EsV7emKIYhtiqhgOhaKwAYZRQY7Iw"/>
-</div>
-</div>
-<div class="w-full md:w-1/2 text-center md:text-left">
-<p class="font-body-md text-body-md text-on-surface-variant mb-6">
-                        Apoi ne mutăm și sărbătorim la Ambio Events. Cu mâncare bună, muzică, dans și, cel mai important, cu voi — oamenii care ne-au fost alături în toți acești ani. Ne dorim o seară care să nu fie perfectă, ci pur și simplu de neuitat.
+                </div>
+            </div>
+            <!-- Party -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-background-surface shadow-sm relative"
+                        style="mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%); -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%);">
+                        <img alt="Petrecere" class="w-full h-full object-cover"
+                            data-alt="A warm, inviting watercolor illustration of an elegant event hall entrance decorated with autumn floral arrangements and soft glowing fairy lights. The mood is festive yet intimate and romantic. The color palette features terracotta, warm cream, and deep earthy browns. The edges of the image fade softly like a traditional watercolor painting on textured paper."
+                            src="https://lh3.googleusercontent.com/aida/ADBb0uhwwmFUM3I4nCvKDm5Njea8mMR4kDxQke5m5VG_VGD7eF9YXuEoB2D2pELJHj6gaHgw4puNC2PrAfhuWOHBVKp-IxM4fCEyCTf_iaDoW2CNGyDtBGM0F11J6yma1MjxabCb0gdJ4T7qTiOdezhvyuL4StJXw4E1lGqvQDG0XLf7FcHSxwqklwI08JG2CuwxNnoZ0QTduEmTPLR1gDHR_SBLRtYPKpTs7mv7eLr_q5jc5V3Zo_EsV7emKIYhtiqhgOhaKwAYZRQY7Iw" />
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Apoi ne mutăm și sărbătorim la Ambio Events. Cu mâncare bună, muzică, dans și, cel mai
+                        important, cu voi — oamenii care ne-au fost alături în toți acești ani. Ne dorim o seară care să
+                        nu fie perfectă, ci pur și simplu de neuitat.
                     </p>
-<a href="https://www.google.com/maps?q=47.112761,27.5513385" target="_blank" rel="noopener" class="bg-text-accent hover:bg-button-hover text-on-primary font-label-caps text-label-caps py-3 px-6 rounded-full transition-colors duration-300 flex items-center justify-center gap-2 mx-auto md:mx-0">
-<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+                    <a href="https://www.google.com/maps?q=47.112761,27.5513385" target="_blank" rel="noopener"
+                        class="bg-text-accent hover:bg-button-hover text-on-primary font-label-caps text-label-caps py-3 px-6 rounded-full transition-colors duration-300 flex items-center justify-center gap-2 mx-auto md:mx-0">
+                        <span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
                         VEZI LOCAȚIA
                     </a>
-</div>
-</div>
-</section>
-<!-- RSVP Section -->
-<section id="rsvp" class="px-inner-padding max-w-container-max mx-auto mb-section-gap relative z-10">
-<div class="bg-background-surface rounded-xl p-8 max-w-3xl mx-auto shadow-sm">
-<div class="text-center mb-8">
-<h3 class="font-display-script text-[48px] text-text-accent mb-4">Ne-ar bucura enorm să ne fiți alături!</h3>
-<p class="font-body-md text-body-md text-primary"><span class="" style="font-family: Spectral; letter-spacing: 0.32px;">Vă rugăm să ne confirmați prezența până pe 15 august 2026.</span></p>
-</div>
-<form id="rsvp-form" class="space-y-6" novalidate>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<input class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 placeholder:text-secondary/60 transition-colors" name="name" required placeholder="Nume complet *" type="text"/>
-<input class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 placeholder:text-secondary/60 transition-colors" name="email" required placeholder="Email *" type="email"/>
-<input class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 placeholder:text-secondary/60 transition-colors" name="phone" required placeholder="Telefon *" type="tel"/>
-<div class="relative">
-<select name="companion" class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 appearance-none text-secondary/80">
-<option disabled="" selected="" value="">Însoțitor / copil</option>
-<option value="singur">Vin singur(ă)</option>
-<option value="adult">Vin cu un însoțitor adult</option>
-<option value="copil">Vin cu copii</option>
-<option value="adult-copil">Vin cu adult și copii</option>
-</select>
-</div>
-</div>
-<div class="flex items-center justify-end gap-4 border-b border-divider pb-4">
-<span class="font-body-md text-secondary">Prezență:</span>
-<label class="flex items-center gap-2 cursor-pointer">
-<input class="text-text-accent focus:ring-text-accent border-input-border" name="attending" required type="radio" value="da"/>
-<span class="font-body-md text-text-primary">Da</span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer">
-<input class="text-text-accent focus:ring-text-accent border-input-border" name="attending" required type="radio" value="nu"/>
-<span class="font-body-md text-text-primary">Nu</span>
-</label>
-</div>
+                </div>
+            </div>
+        </section>
+        <!-- RSVP Section -->
+        <section id="rsvp" class="px-inner-padding max-w-container-max mx-auto mb-section-gap relative z-10">
+            <div class="bg-background-surface rounded-xl p-8 max-w-3xl mx-auto shadow-sm">
+                <div class="text-center mb-8">
+                    <h3 class="font-display-script text-[48px] text-text-accent mb-4">Ne-ar bucura enorm să ne fiți
+                        alături!</h3>
+                    <p class="font-body-md text-body-md text-secondary"><span class=""
+                            style="font-family: Spectral; letter-spacing: 0.32px;">Vă rugăm să ne confirmați prezența
+                            până pe 15 august 2026.</span></p>
+                </div>
+                <form id="rsvp-form" class="space-y-6" novalidate>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input
+                            class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 placeholder:text-secondary/60 transition-colors"
+                            name="name" required placeholder="Nume complet *" type="text" />
+                        <input
+                            class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 placeholder:text-secondary/60 transition-colors"
+                            name="email" required placeholder="Email *" type="email" />
+                        <input
+                            class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 placeholder:text-secondary/60 transition-colors"
+                            name="phone" required placeholder="Telefon *" type="tel" />
+                        <div class="relative">
+                            <select name="companion"
+                                class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 appearance-none text-secondary/80">
+                                <option disabled="" selected="" value="">Însoțitor / copil</option>
+                                <option value="singur">Vin singur(ă)</option>
+                                <option value="adult">Vin cu un însoțitor adult</option>
+                                <option value="copil">Vin cu copii</option>
+                                <option value="adult-copil">Vin cu adult și copii</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-end gap-4 border-b border-divider pb-4">
+                        <span class="font-body-md text-secondary">Prezență:</span>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input class="text-text-accent focus:ring-text-accent border-input-border" name="attending"
+                                required type="radio" value="da" />
+                            <span class="font-body-md text-text-primary">Da</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer">
+                            <input class="text-text-accent focus:ring-text-accent border-input-border" name="attending"
+                                required type="radio" value="nu" />
+                            <span class="font-body-md text-text-primary">Nu</span>
+                        </label>
+                    </div>
 
-<div class="conditional" data-show-if-attending="da,poate">
-<div class="flex items-center justify-end gap-4 border-b border-divider pb-4 mb-6">
-<span class="font-body-md text-secondary">Câți participanți în total?</span>
-<input type="number" name="adults" min="1" max="8" value="1" class="w-20 bg-transparent border border-input-border rounded-md px-3 py-2 font-body-md text-text-primary focus:border-text-accent text-center" />
-</div>
-<input class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 placeholder:text-secondary/60 transition-colors mb-6" name="kidsCount" placeholder="Număr și vârsta copiilor (opțional)" type="text"/>
-<input class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 placeholder:text-secondary/60 transition-colors mb-6" name="message" placeholder="Un mesaj pentru noi (opțional)" type="text"/>
-</div>
+                    <div class="conditional" data-show-if-attending="da,poate">
+                        <div class="flex items-center justify-end gap-4 border-b border-divider pb-4 mb-6">
+                            <span class="font-body-md text-secondary">Câți participanți în total?</span>
+                            <input type="number" name="adults" min="1" max="8" value="1"
+                                class="w-20 bg-transparent border border-input-border rounded-md px-3 py-2 font-body-md text-text-primary focus:border-text-accent text-center" />
+                        </div>
+                        <input
+                            class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 placeholder:text-secondary/60 transition-colors mb-6"
+                            name="kidsCount" placeholder="Număr și vârsta copiilor (opțional)" type="text" />
+                        <input
+                            class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 placeholder:text-secondary/60 transition-colors mb-6"
+                            name="message" placeholder="Un mesaj pentru noi (opțional)" type="text" />
+                    </div>
 
-<input class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 placeholder:text-secondary/60 transition-colors" name="dietary" placeholder="Preferințe alimentare (opțional)" type="text"/>
-<div class="flex flex-col justify-center items-center pt-4">
-<button id="rsvp-submit" class="bg-text-accent hover:bg-button-hover text-on-primary font-label-caps text-label-caps py-4 px-8 rounded-full transition-colors duration-300 flex items-center justify-center gap-2 w-full md:w-auto" type="submit">
-<span class="material-symbols-outlined text-sm btn__icon" data-icon="favorite" data-weight="fill" style='font-variation-settings: "FILL" 1;'>favorite</span>
+                    <input
+                        class="w-full bg-transparent border border-input-border rounded-md px-4 py-3 font-body-md text-text-primary focus:border-text-accent focus:ring-0 placeholder:text-secondary/60 transition-colors"
+                        name="dietary" placeholder="Preferințe alimentare (opțional)" type="text" />
+                    <div class="flex flex-col justify-center items-center pt-4">
+                        <button id="rsvp-submit"
+                            class="bg-text-accent hover:bg-button-hover text-on-primary font-label-caps text-label-caps py-4 px-8 rounded-full transition-colors duration-300 flex items-center justify-center gap-2 w-full md:w-auto"
+                            type="submit">
+                            <span class="material-symbols-outlined text-sm btn__icon" data-icon="favorite"
+                                data-weight="fill" style='font-variation-settings: "FILL" 1;'>favorite</span>
                             <span>CONFIRM PARTICIPAREA</span>
                         </button>
-<p id="form-status" class="mt-4 font-body-md" role="status" aria-live="polite"></p>
-</div>
-</form>
-</div>
-</section>
-<!-- Bottom Floral Ornament -->
-<div class="absolute bottom-0 right-0 w-full h-96 floral-corner-br -z-10" data-alt="Dense, lush watercolor painting of autumn botanicals, focusing on the bottom right corner. Featuring richly colored fall leaves, delicate twigs, and soft terracotta floral elements. The style is classic, editorial, and elegant, providing a visual anchor for the bottom of the page against a soft cream parchment texture."></div>
-</main>
-<!-- BottomNavBar (Mobile Only) -->
-<nav class="md:hidden bg-surface-container/90 backdrop-blur-md fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 rounded-t-xl">
-<a class="flex flex-col items-center justify-center text-primary hover:bg-secondary-container/50 transition-all px-4 py-1 rounded-full" href="#poveste">
-<span class="material-symbols-outlined mb-1" data-icon="history_edu">history_edu</span>
-<span class="font-label-caps text-label-caps">Poveste</span>
-</a>
-<a class="flex flex-col items-center justify-center text-secondary hover:bg-secondary-container/50 transition-all px-4 py-1 rounded-full" href="#locatie">
-<span class="material-symbols-outlined mb-1" data-icon="location_on">location_on</span>
-<span class="font-label-caps text-label-caps">Locație</span>
-</a>
-<a class="flex flex-col items-center justify-center text-secondary hover:bg-secondary-container/50 transition-all px-4 py-1 rounded-full" href="#rsvp">
-<span class="material-symbols-outlined mb-1" data-icon="how_to_reg">how_to_reg</span>
-<span class="font-label-caps text-label-caps">RSVP</span>
-</a>
-</nav>
-<!-- Footer -->
-<footer class="w-full flex flex-col items-center gap-4 py-section-gap px-inner-padding text-center border-t border-divider bg-background-surface pb-24 md:pb-section-gap">
-<div class="flex flex-col items-center gap-2 mb-4">
-<span class="font-body-md text-secondary">Abia așteptăm să fim împreună,</span>
-<span class="font-display-script text-display-script text-primary">Laura &amp; Răzvan</span>
-<span class="material-symbols-outlined text-text-accent mt-2" data-icon="favorite" data-weight="fill" style='font-variation-settings: "FILL" 1;'>favorite</span>
-</div>
-<div class="flex gap-6 mb-4">
-<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#poveste">Poveste</a>
-<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#locatie">Locație</a>
-<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#rsvp">Confirmare</a>
-</div>
-<p class="font-body-md text-body-md text-secondary opacity-70">© 2026 Laura &amp; Răzvan. Abia așteptăm să fim împreună.</p>
-</footer>
-<script src="config.js"></script>
-<script src="script.js"></script>
-</body></html>
+                        <p id="form-status" class="mt-4 font-body-md" role="status" aria-live="polite"></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Bottom Floral Ornament -->
+        <div class="absolute bottom-0 right-0 w-full h-96 floral-corner-br -z-10"
+            data-alt="Dense, lush watercolor painting of autumn botanicals, focusing on the bottom right corner. Featuring richly colored fall leaves, delicate twigs, and soft terracotta floral elements. The style is classic, editorial, and elegant, providing a visual anchor for the bottom of the page against a soft cream parchment texture.">
+        </div>
+    </main>
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav
+        class="md:hidden bg-surface-container/90 backdrop-blur-md fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 rounded-t-xl">
+        <a class="flex flex-col items-center justify-center text-primary hover:bg-secondary-container/50 transition-all px-4 py-1 rounded-full"
+            href="#poveste">
+            <span class="material-symbols-outlined mb-1" data-icon="history_edu">history_edu</span>
+            <span class="font-label-caps text-label-caps">Poveste</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-secondary hover:bg-secondary-container/50 transition-all px-4 py-1 rounded-full"
+            href="#locatie">
+            <span class="material-symbols-outlined mb-1" data-icon="location_on">location_on</span>
+            <span class="font-label-caps text-label-caps">Locație</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-secondary hover:bg-secondary-container/50 transition-all px-4 py-1 rounded-full"
+            href="#rsvp">
+            <span class="material-symbols-outlined mb-1" data-icon="how_to_reg">how_to_reg</span>
+            <span class="font-label-caps text-label-caps">RSVP</span>
+        </a>
+    </nav>
+    <!-- Footer -->
+    <footer
+        class="w-full flex flex-col items-center gap-4 py-section-gap px-inner-padding text-center border-t border-divider bg-background-surface pb-24 md:pb-section-gap">
+        <div class="flex flex-col items-center gap-2 mb-4">
+            <span class="font-body-md text-secondary">Abia așteptăm să fim împreună,</span>
+            <span class="font-display-script text-display-script text-primary">Laura &amp; Răzvan</span>
+            <span class="material-symbols-outlined text-text-accent mt-2" data-icon="favorite" data-weight="fill"
+                style='font-variation-settings: "FILL" 1;'>favorite</span>
+        </div>
+        <div class="flex gap-6 mb-4">
+            <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors"
+                href="#poveste">Poveste</a>
+            <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors"
+                href="#locatie">Locație</a>
+            <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors"
+                href="#rsvp">Confirmare</a>
+        </div>
+        <p class="font-body-md text-body-md text-secondary opacity-70">© 2026 Laura &amp; Răzvan. Abia așteptăm să fim
+            împreună.</p>
+    </footer>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
