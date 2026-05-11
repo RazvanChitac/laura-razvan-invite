@@ -173,23 +173,22 @@
   const spyObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const id = entry.target.id;
-        if (navLinks[id]) {
+        const section = entry.target.dataset.navSection;
+        if (navLinks[section]) {
           Object.values(navLinks).forEach(link => {
             if (link) {
               link.classList.remove('text-text-accent');
               link.classList.add('text-secondary');
             }
           });
-          navLinks[id].classList.remove('text-secondary');
-          navLinks[id].classList.add('text-text-accent');
+          navLinks[section].classList.remove('text-secondary');
+          navLinks[section].classList.add('text-text-accent');
         }
       }
     });
   }, spyOptions);
 
-  ['poveste', 'locatie', 'rsvp'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) spyObserver.observe(el);
+  document.querySelectorAll('[data-nav-section]').forEach(el => {
+    spyObserver.observe(el);
   });
 })();

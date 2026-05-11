@@ -231,20 +231,23 @@
 <body class="bg-background-base text-text-primary texture-bg relative min-h-screen overflow-x-hidden antialiased">
     <!-- TopAppBar -->
     <header class="fixed top-0 left-0 w-full z-40 bg-background/80 backdrop-blur-md transition-all duration-300">
-        <div class="flex justify-between items-center w-full px-inner-padding max-w-container-max mx-auto py-4">
+        <div class="flex justify-between items-center w-full px-inner-padding max-w-container-max mx-auto py-2">
             <span class="material-symbols-outlined text-primary" data-icon="favorite">favorite</span>
-            <h1 class="flex items-center gap-3 text-primary font-body-md">
-                <span class="text-sm tracking-widest mt-1">OCT</span>
-                <span class="text-secondary/40">|</span>
-                <span class="text-3xl">04</span>
-                <span class="text-secondary/40">|</span>
-                <span class="text-sm tracking-widest mt-1">2026</span>
-            </h1>
+            <div class="flex flex-col items-center">
+                <h1 class="flex items-center gap-3 text-primary font-body-md">
+                    <span class="text-sm tracking-widest mt-1">OCT</span>
+                    <span class="text-secondary/40">|</span>
+                    <span class="text-3xl">04</span>
+                    <span class="text-secondary/40">|</span>
+                    <span class="text-sm tracking-widest mt-1">2026</span>
+                </h1>
+                <span class="text-[11px] uppercase tracking-[0.2em] text-secondary/70 font-body-md mt-0.5">ora 16:00</span>
+            </div>
             <span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
         </div>
     </header>
     <!-- Main Content Canvas -->
-    <main class="pt-[100px] pb-section-gap relative">
+    <main class="pt-[80px] pb-section-gap relative">
         <!-- Background Ornaments -->
         <div class="absolute top-0 left-0 w-full h-96 floral-corner-tl -z-10"
             data-alt="Soft, impressionistic watercolor painting of autumn leaves and delicate branches, acting as a subtle corner overlay in the top left. The color palette features muted terracotta, warm ochre, and soft beige. The style is romantic and elegant, blending seamlessly into the light cream parchment background. High-key lighting, airy and welcoming mood.">
@@ -266,7 +269,7 @@
                 Cu inimile pline de emoție,<br />
                 vă invităm alături de noi!
             </p>
-            <h2 class="font-display-script text-[72px] leading-[1.1] text-text-accent mb-4 drop-shadow-sm">
+            <h2 id="poveste" data-nav-section="poveste" class="font-display-script text-[72px] leading-[1.1] text-text-accent mb-4 drop-shadow-sm scroll-mt-20">
                 Laura &amp; Răzvan
             </h2>
             <!-- Decorative Divider -->
@@ -278,7 +281,7 @@
             </div>
         </section>
         <!-- Story Section -->
-        <section id="poveste"
+        <section data-nav-section="poveste"
             class="px-inner-padding max-w-container-max mx-auto text-center mb-section-gap reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
 
             <div class="max-w-2xl mx-auto space-y-6 font-body-lg text-body-lg text-on-surface-variant">
@@ -293,7 +296,7 @@
             </div>
         </section>
         <!-- People Section -->
-        <section
+        <section data-nav-section="poveste"
             class="px-inner-padding max-w-container-max mx-auto text-center mb-section-gap reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
             <h3 class="font-display-script text-[40px] text-text-accent mb-12 flex items-center justify-center gap-2">
                 Pentru că nimic nu se construiește singur
@@ -332,7 +335,7 @@
             <div class="w-full max-w-3xl mx-auto h-px bg-divider mt-12"></div>
         </section>
         <!-- Countdown Section -->
-        <section
+        <section data-nav-section="poveste"
             class="px-inner-padding max-w-container-max mx-auto mb-section-gap reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
             <div class="bg-background-surface rounded-xl p-8 max-w-3xl mx-auto relative overflow-hidden">
                 <!-- Subtle internal texture -->
@@ -367,8 +370,8 @@
             </div>
         </section>
         <!-- Events Section -->
-        <section id="locatie"
-            class="px-inner-padding max-w-container-max mx-auto mb-section-gap space-y-8 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
+        <section id="locatie" data-nav-section="locatie"
+            class="px-inner-padding max-w-container-max mx-auto mb-section-gap space-y-8 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out scroll-mt-20">
             <!-- Church -->
             <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                 <div class="w-full md:w-1/2 flex justify-center">
@@ -418,8 +421,8 @@
             </div>
         </section>
         <!-- RSVP Section -->
-        <section id="rsvp"
-            class="px-inner-padding max-w-container-max mx-auto mb-section-gap relative z-10 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
+        <section id="rsvp" data-nav-section="rsvp"
+            class="px-inner-padding max-w-container-max mx-auto mb-section-gap relative z-10 reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out scroll-mt-20">
             <div class="bg-background-surface rounded-xl p-8 max-w-3xl mx-auto shadow-sm">
                 <div class="text-center mb-8">
                     <h3 class="font-display-script text-[48px] text-text-accent mb-4">Ne-ar bucura enorm să ne fiți
