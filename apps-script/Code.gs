@@ -80,7 +80,7 @@ function sendConfirmationEmail_(email, name) {
   const subject = "Confirmare Participare Nuntă - Laura & Răzvan";
   const body = `Dragă ${name},
 
-Îți mulțumim din suflet pentru confirmare! Ne bucurăm enorm că vei fi alături de noi în ziua noastră specială.
+Îți mulțumim din suflet pentru confirmare! Ne bucurăm enorm că vei fi alături de noi în ziua nunții!
 
 Salvați data: 04 Octombrie 2026, ora 16:00.
 Locație: Biserica Toma Cozma / Ambio Events, Iași.
