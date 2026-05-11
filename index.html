@@ -233,7 +233,13 @@
     <header class="fixed top-0 left-0 w-full z-40 bg-background/80 backdrop-blur-md transition-all duration-300">
         <div class="flex justify-between items-center w-full px-inner-padding max-w-container-max mx-auto py-4">
             <span class="material-symbols-outlined text-primary" data-icon="favorite">favorite</span>
-            <h1 class="font-display-script text-display-script-mobile md:text-display-script text-primary"><br /></h1>
+            <h1 class="flex items-center gap-3 text-primary font-body-md">
+                <span class="text-sm tracking-widest mt-1">OCT</span>
+                <span class="text-secondary/40">|</span>
+                <span class="text-3xl">04</span>
+                <span class="text-secondary/40">|</span>
+                <span class="text-sm tracking-widest mt-1">2026</span>
+            </h1>
             <span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
         </div>
     </header>
@@ -258,7 +264,7 @@
             </div>
             <p class="font-body-md text-body-md text-secondary mb-4 max-w-md mx-auto italic">
                 Cu inimile pline de emoție,<br />
-                vă invităm alături de noi
+                vă invităm alături de noi!
             </p>
             <h2 class="font-display-script text-[72px] leading-[1.1] text-text-accent mb-4 drop-shadow-sm">
                 Laura &amp; Răzvan
@@ -274,8 +280,7 @@
         <!-- Story Section -->
         <section id="poveste"
             class="px-inner-padding max-w-container-max mx-auto text-center mb-section-gap reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
-            <h3 class="font-label-caps text-label-caps text-secondary mb-8 uppercase tracking-widest">O zi care ne adună
-                pe toți</h3>
+
             <div class="max-w-2xl mx-auto space-y-6 font-body-lg text-body-lg text-on-surface-variant">
                 <p class="">
                     După aproape 9 ani în care am crescut împreună, am râs, am învățat și ne-am construit lumea noastră,
@@ -283,43 +288,8 @@
                 </p>
                 <p class="">
                     Cu binecuvântarea părinților și alături de nașii noștri, vă invităm să ne fiți alături în ziua în
-                    care ne vom spune «DA» — simplu, sincer și din toată inima.
+                    care ne vom spune "DA" — simplu, sincer și din toată inima.
                 </p>
-            </div>
-        </section>
-        <!-- Countdown Section -->
-        <section
-            class="px-inner-padding max-w-container-max mx-auto mb-section-gap reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
-            <div class="bg-background-surface rounded-xl p-8 max-w-3xl mx-auto relative overflow-hidden">
-                <!-- Subtle internal texture -->
-                <div class="absolute inset-0 bg-white/40 mix-blend-overlay pointer-events-none"></div>
-                <h3 class="font-display-script text-[40px] text-center text-text-accent mb-8 relative z-10">Numărăm
-                    zilele până la "Da"</h3>
-                <div class="flex flex-row justify-center items-center gap-8 md:gap-16 relative z-10" id="countdown">
-                    <div class="flex flex-col items-center">
-                        <span class="font-countdown-value text-countdown-value text-text-accent"
-                            data-unit="days">--</span>
-                        <span class="font-label-caps text-label-caps text-secondary uppercase mt-2">Zile</span>
-                    </div>
-                    <!-- Vertical Separator -->
-                    <div class="h-16 w-px bg-text-accent/30 relative flex items-center justify-center">
-                        <div class="w-1.5 h-1.5 rounded-full bg-text-accent absolute"></div>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <span class="font-countdown-value text-countdown-value text-text-accent"
-                            data-unit="hours">--</span>
-                        <span class="font-label-caps text-label-caps text-secondary uppercase mt-2">Ore</span>
-                    </div>
-                    <!-- Vertical Separator -->
-                    <div class="h-16 w-px bg-text-accent/30 relative flex items-center justify-center">
-                        <div class="w-1.5 h-1.5 rounded-full bg-text-accent absolute"></div>
-                    </div>
-                    <div class="flex flex-col items-center flex">
-                        <span class="font-countdown-value text-countdown-value text-text-accent"
-                            data-unit="minutes">--</span>
-                        <span class="font-label-caps text-label-caps text-secondary uppercase mt-2">Minute</span>
-                    </div>
-                </div>
             </div>
         </section>
         <!-- People Section -->
@@ -360,6 +330,41 @@
                 </div>
             </div>
             <div class="w-full max-w-3xl mx-auto h-px bg-divider mt-12"></div>
+        </section>
+        <!-- Countdown Section -->
+        <section
+            class="px-inner-padding max-w-container-max mx-auto mb-section-gap reveal-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out">
+            <div class="bg-background-surface rounded-xl p-8 max-w-3xl mx-auto relative overflow-hidden">
+                <!-- Subtle internal texture -->
+                <div class="absolute inset-0 bg-white/40 mix-blend-overlay pointer-events-none"></div>
+                <h3 class="font-display-script text-[40px] text-center text-text-accent mb-8 relative z-10">Numărăm
+                    zilele până la "Da"</h3>
+                <div class="flex flex-row justify-center items-center gap-8 md:gap-16 relative z-10" id="countdown">
+                    <div class="flex flex-col items-center">
+                        <span class="font-countdown-value text-countdown-value text-text-accent"
+                            data-unit="days">--</span>
+                        <span class="font-label-caps text-label-caps text-secondary uppercase mt-2">Zile</span>
+                    </div>
+                    <!-- Vertical Separator -->
+                    <div class="h-16 w-px bg-text-accent/30 relative flex items-center justify-center">
+                        <div class="w-1.5 h-1.5 rounded-full bg-text-accent absolute"></div>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="font-countdown-value text-countdown-value text-text-accent"
+                            data-unit="hours">--</span>
+                        <span class="font-label-caps text-label-caps text-secondary uppercase mt-2">Ore</span>
+                    </div>
+                    <!-- Vertical Separator -->
+                    <div class="h-16 w-px bg-text-accent/30 relative flex items-center justify-center">
+                        <div class="w-1.5 h-1.5 rounded-full bg-text-accent absolute"></div>
+                    </div>
+                    <div class="flex flex-col items-center flex">
+                        <span class="font-countdown-value text-countdown-value text-text-accent"
+                            data-unit="minutes">--</span>
+                        <span class="font-label-caps text-label-caps text-secondary uppercase mt-2">Minute</span>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Events Section -->
         <section id="locatie"
@@ -419,9 +424,10 @@
                 <div class="text-center mb-8">
                     <h3 class="font-display-script text-[48px] text-text-accent mb-4">Ne-ar bucura enorm să ne fiți
                         alături!</h3>
-                    <p class="font-body-md text-body-md text-secondary"><span class=""
-                            style="font-family: Spectral; letter-spacing: 0.32px;">Vă rugăm să ne confirmați prezența
-                            până pe 15 august 2026.</span></p>
+                    <p class="text-xl text-secondary">
+                        Vă rugăm să ne confirmați prezența până pe <strong class="text-text-accent">15 August
+                            2026</strong>.
+                    </p>
                 </div>
                 <form id="rsvp-form" class="space-y-6" novalidate>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -523,7 +529,7 @@
     <footer
         class="w-full flex flex-col items-center gap-4 py-section-gap px-inner-padding text-center border-t border-divider bg-background-surface pb-24 md:pb-section-gap">
         <div class="flex flex-col items-center gap-2 mb-4">
-            <span class="font-body-md text-secondary">Abia așteptăm să fim împreună,</span>
+            <span class="font-body-md text-secondary">Abia așteptăm să fim împreună!</span>
             <span class="font-display-script text-display-script text-primary">Laura &amp; Răzvan</span>
             <span class="material-symbols-outlined text-text-accent mt-2" data-icon="favorite" data-weight="fill"
                 style='font-variation-settings: "FILL" 1;'>favorite</span>
